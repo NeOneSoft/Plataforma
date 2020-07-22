@@ -13,7 +13,7 @@ def validate_discount_value(value, discount_value):
 
 
 class Product(models.Model):
-    name = models.CharField(min_lenght=3, max_length=55)
+    name = models.CharField(max_length=55)
     value = models.FloatField(validators=[MaxValueValidator(99998.9), MinValueValidator(1)])
     discount_value = models.FloatField(validators=[validate_discount_value])
     stock = models.PositiveIntegerField(validators=[MinValueValidator(0)])
