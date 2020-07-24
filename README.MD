@@ -63,7 +63,7 @@ Now you can access to admin module's dashboard
 
 #Local API Rest urls
 - **http://127.0.0.1:8000/api/products/bulk_insert/**
-- **http://127.0.0.1:8000/api/products//**
+- **http://127.0.0.1:8000/api/products/**
 
 
 #Admin url
