@@ -10,10 +10,12 @@ class Product(models.Model):
     discount_value = models.FloatField(null=True)
     stock = models.PositiveIntegerField(validators=[MinValueValidator(0)])
 
+    # Overwriting save() method
     def save(self, *args, **kwargs):
         self.full_clean()
         return super(Product, self).save(*args, **kwargs)
 
+    # Define clean() method to validate value and discount fields
     def clean(self):
         super(Product, self).clean()
         if self.value < self.discount_value:
