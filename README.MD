@@ -40,6 +40,23 @@ Before running please follow this steps:
 ```
 - 7- Open your browser at **127.0.0.1:8000**
 
+#AWS Deploy
+```
+plat-venv) Gonzalos-MacBook-Air:plataforma gonzaloromero$ eb status
+Environment details for: plataforma-dev
+  Application name: plataforma
+  Region: us-west-2
+  Deployed Version: app-97ac-200723_231358
+  Environment ID: e-tpwdwdhr3s
+  Platform: arn:aws:elasticbeanstalk:us-west-2::platform/Python 3.7 running on 64bit Amazon Linux 2/3.0.3
+  Tier: WebServer-Standard-1.0
+  CNAME: plataforma-test-eb-dns.us-west-2.elasticbeanstalk.com
+  Updated: 2020-07-24 04:17:44.991000+00:00
+  Status: Ready
+  Health: Red
+```
+
+
 #CURL API use(MacOS)
 
 - 1- Open your terminal
